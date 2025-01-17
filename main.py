@@ -35,8 +35,8 @@ def main():
                 sys.exit()
             for shot in shots:
                 if shot.collision(obj):
-                    obj.kill()
                     shot.kill()
+                    obj.split()
         
         screen.fill("black")
         
